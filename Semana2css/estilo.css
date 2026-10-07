@@ -1,0 +1,126 @@
+
+.caja {
+margin: 20px; /* espacio externo */
+border: 30px solid blue; /* borde visible */
+padding: 100px; /* espacio interno */
+background-color: rgb(121, 112, 112);
+}
+
+
+/*------------------------------- */
+.block {
+    display: block; /* Ocupa todo el ancho disponible */
+    background: purple;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.inline {
+    display: inline; /* Se coloca en la misma línea, ocupa solo su contenido
+*/
+    background: green;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block; /* Se coloca en línea, pero acepta ancho y alto
+    definidos */
+    background: orange;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.none {
+        display: none; /* Oculta el elemento, no ocupa espacio */
+}
+
+/*----------Posicionamiento------------- */
+
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+}
+/* STATIC: posición por defecto */
+.static {
+position: static; /* sigue el flujo normal */
+background: lightblue;
+padding: 10px;
+}
+/* RELATIVE: se mueve respecto a su posición original */
+.relative {
+position: relative;
+top: 10px;
+left: 10px;
+background: lightgreen;
+padding: 10px;
+}
+/* ABSOLUTE: se posiciona respecto al contenedor padre */
+.contenedor {
+position: relative; /* referencia para el hijo absoluto */
+height: 150px;
+background: #eee;
+}
+.absolute {
+position: absolute;
+top: 10px;
+left: 10px;
+background: orange;
+padding: 10px;
+}
+/* STICKY: se mantiene visible al hacer scroll */
+.sticky {
+position: sticky;
+top: 0;
+background: purple;
+color: white;
+padding: 10px;
+}
+
+/*------------------------------- */
+
+.shape,
+.shape1,
+.shape2,
+.shape3 {
+width: 100px;
+height: 100px;
+background-color: black;
+margin: 10px;
+}
+.shape {
+border-radius: 0; /* esquinas cuadradas */
+}
+.shape1 {
+border-radius: 50%; /* círculo perfecto si es un cuadrado */
+}
+.shape2 {
+border-radius: 1rem; /* esquinas suavemente redondeadas */
+}
+.shape3 {
+border-radius: 50% 10% 50% 10%; /* esquinas asimétricas */
+}
+
+/*-----------GRID------------- */
+
+.grid-container {
+display: grid; /* activa el modelo Grid */
+grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+grid-template-rows: auto; /* filas automáticas */
+gap: 10px; /* espacio entre celdas */
+background-color: #eee;
+padding: 10px;
+}
+.item {
+background-color: rgb(10, 77, 77);
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 1.2rem;
+}
