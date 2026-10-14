@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Nacional de Cañete</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- BARRA SUPERIOR -->
+    <div class="bg-blue-950 px-5 py-2 text-sm text-white">
+        <div class="mx-auto flex max-w-7xl flex-wrap justify-between gap-2">
+            <p>Universidad Nacional de Cañete</p>
+
+            <div class="flex gap-4">
+                <a href="#noticias" class="hover:text-yellow-300">Noticias</a>
+                <a href="#contacto" class="hover:text-yellow-300">Contacto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABECERA -->
+    <header class="bg-white shadow-md">
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4">
+
+            <a href="#inicio" class="flex items-center gap-3">
+                <img
+                    src="images/logoUNDC.jpg"
+                    alt="Logo de la Universidad Nacional de Cañete"
+                    class="h-14 w-14 rounded-full object-contain">
+
+                <div>
+                    <h1 class="text-sm font-bold uppercase text-blue-900">
+                        Universidad Nacional
+                    </h1>
+                    <p class="text-2xl font-extrabold text-blue-950">
+                        de Cañete
+                    </p>
+                    <p class="text-xs text-gray-500">
+                        Educación para el desarrollo
+                    </p>
+                </div>
+            </a>
+
+            <!-- MENÚ SIN JAVASCRIPT -->
+            <nav>
+                <ul class="flex flex-wrap items-center gap-2 md:gap-5">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#universidad" class="nav-link">Universidad</a></li>
+                    <li><a href="#carreras" class="nav-link">Carreras</a></li>
+                    <li><a href="#noticias" class="nav-link">Noticias</a></li>
+                    <li>
+                        <a href="#contacto"
+                           class="rounded bg-red-700 px-4 py-2 font-semibold text-white hover:bg-red-800">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section id="inicio" class="banner">
+            <div class="banner-overlay">
+                <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-24 md:grid-cols-2">
+
+                    <div>
+                        <p class="mb-4 font-semibold uppercase tracking-widest text-yellow-300">
+                            Universidad pública de Cañete
+                        </p>
+
+                        <h2 class="max-w-2xl text-4xl font-extrabold leading-tight md:text-6xl">
+                            Construimos el futuro a través de la educación
+                        </h2>
+
+                        <p class="mt-5 max-w-xl text-lg leading-8 text-gray-100">
+                            Formamos profesionales comprometidos con la innovación,
+                            la investigación y el desarrollo de nuestra sociedad.
+                        </p>
+
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <a href="#carreras" class="boton-principal">
+                                Conoce nuestras carreras
+                            </a>
+
+                            <a href="#universidad" class="boton-secundario">
+                                Sobre nosotros
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img
+                            src="images/casadelacultura.jpg"
+                            alt="Casa de la Cultura"
+                            class="h-80 w-full rounded-xl object-cover shadow-lg">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCESOS DIRECTOS -->
+        <section class="relative mx-auto -mt-8 grid max-w-7xl gap-4 px-5 sm:grid-cols-2 lg:grid-cols-4">
+
+            <a href="#carreras" class="acceso">
+                <span class="text-3xl">🎓</span>
+                <div>
+                    <h3 class="font-bold text-blue-950">Carreras</h3>
+                    <p class="text-sm text-gray-500">Oferta académica</p>
+                </div>
+            </a>
+
+            <a href="#noticias" class="acceso">
+                <span class="text-3xl">📰</span>
+                <div>
+                    <h3 class="font-bold text-blue-950">Noticias</h3>
+                    <p class="text-sm text-gray-500">Actualidad universitaria</p>
+                </div>
+            </a>
+
+            <a href="#eventos" class="acceso">
+                <span class="text-3xl">📅</span>
+                <div>
+                    <h3 class="font-bold text-blue-950">Eventos</h3>
+                    <p class="text-sm text-gray-500">Actividades y eventos</p>
+                </div>
+            </a>
+
+            <a href="#contacto" class="acceso">
+                <span class="text-3xl">✉️</span>
+                <div>
+                    <h3 class="font-bold text-blue-950">Contacto</h3>
+                    <p class="text-sm text-gray-500">Información institucional</p>
+                </div>
+            </a>
+
+        </section>
+
+        <!-- PRESENTACIÓN -->
+        <section id="universidad" class="mx-auto max-w-7xl px-5 py-20">
+
+            <div>
+                <p class="etiqueta">Conoce nuestra institución</p>
+
+                <h2 class="titulo-seccion">
+                    Una universidad al servicio de la sociedad
+                </h2>
+
+                <p class="mt-5 leading-7 text-gray-600">
+                    La Universidad Nacional de Cañete es una institución pública
+                    de educación superior comprometida con la formación de
+                    profesionales y el desarrollo de la región.
+                </p>
+
+                <p class="mt-4 leading-7 text-gray-600">
+                    Promovemos el conocimiento, el pensamiento crítico y la
+                    investigación como herramientas para afrontar los desafíos
+                    de nuestra sociedad.
+                </p>
+
+                <a href="#carreras" class="mt-6 inline-block font-bold text-blue-900 hover:text-red-700">
+                    Explorar carreras →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- CARRERAS -->
+        <section id="carreras" class="bg-white py-16">
+            <div class="mx-auto max-w-7xl px-5">
+
+                <p class="etiqueta">Formación profesional</p>
+
+                <h2 class="titulo-seccion">
+                    Nuestras carreras profesionales
+                </h2>
+
+                <p class="mt-4 max-w-2xl text-gray-600">
+                    Conoce algunas áreas profesionales para tu futuro académico.
+                </p>
+
+                <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <article class="tarjeta">
+                        <div class="p-6">
+                            <p class="etiqueta">Ingeniería</p>
+                            <h3 class="mt-2 text-xl font-bold">Ingeniería de Sistemas</h3>
+                            <p class="mt-3 leading-6 text-gray-600">
+                                Tecnología, programación y desarrollo de soluciones informáticas.
+                            </p>
+                            <a href="#contacto" class="enlace-tarjeta">Más información →</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="p-6">
+                            <p class="etiqueta">Ciencias agrarias</p>
+                            <h3 class="mt-2 text-xl font-bold">Agronomía</h3>
+                            <p class="mt-3 leading-6 text-gray-600">
+                                Producción agrícola, recursos naturales y sostenibilidad.
+                            </p>
+                            <a href="#contacto" class="enlace-tarjeta">Más información →</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="p-6">
+                            <p class="etiqueta">Gestión empresarial</p>
+                            <h3 class="mt-2 text-xl font-bold">Administración</h3>
+                            <p class="mt-3 leading-6 text-gray-600">
+                                Gestión de empresas, liderazgo y toma de decisiones.
+                            </p>
+                            <a href="#contacto" class="enlace-tarjeta">Más información →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTICIAS -->
+        <section id="noticias" class="mx-auto max-w-7xl px-5 py-20">
+
+            <p class="etiqueta">Actualidad</p>
+
+            <h2 class="titulo-seccion">Últimas noticias</h2>
+
+            <div class="mt-10 grid gap-6 md:grid-cols-3">
+
+                <article class="tarjeta">
+                    <div class="p-5">
+                        <p class="text-sm font-semibold text-red-700">Vida universitaria</p>
+                        <h3 class="mt-2 text-lg font-bold">
+                            Actividades para la comunidad estudiantil
+                        </h3>
+                        <p class="mt-3 text-sm leading-6 text-gray-600">
+                            Espacios de participación, aprendizaje y colaboración.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="p-5">
+                        <p class="text-sm font-semibold text-red-700">Innovación</p>
+                        <h3 class="mt-2 text-lg font-bold">
+                            Tecnología aplicada al aprendizaje
+                        </h3>
+                        <p class="mt-3 text-sm leading-6 text-gray-600">
+                            El uso de herramientas digitales en la formación profesional.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="p-5">
+                        <p class="text-sm font-semibold text-red-700">Comunidad</p>
+                        <h3 class="mt-2 text-lg font-bold">
+                            Universidad y desarrollo regional
+                        </h3>
+                        <p class="mt-3 text-sm leading-6 text-gray-600">
+                            La educación superior como motor de nuevas oportunidades.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="mt-5 text-xs text-gray-500">
+                Las noticias mostradas son contenido de ejemplo para esta maqueta.
+            </p>
+        </section>
+
+        <!-- EVENTOS -->
+        <section id="eventos" class="bg-blue-950 py-16 text-white">
+            <div class="mx-auto max-w-7xl px-5">
+
+                <p class="font-bold uppercase tracking-widest text-yellow-300">
+                    Agenda universitaria
+                </p>
+
+                <h2 class="mt-3 text-3xl font-extrabold md:text-4xl">
+                    Próximos eventos
+                </h2>
+
+                <div class="mt-10 grid gap-5 md:grid-cols-3">
+
+                    <article class="evento">
+                        <p class="text-sm text-yellow-300">18 OCTUBRE</p>
+                        <h3 class="mt-3 text-lg font-bold">
+                            Charla de tecnología
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-300">
+                            Actividad académica para estudiantes.
+                        </p>
+                    </article>
+
+                    <article class="evento">
+                        <p class="text-sm text-yellow-300">22 OCTUBRE</p>
+                        <h3 class="mt-3 text-lg font-bold">
+                            Integración estudiantil
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-300">
+                            Encuentro de la comunidad universitaria.
+                        </p>
+                    </article>
+
+                    <article class="evento">
+                        <p class="text-sm text-yellow-300">05 NOVIEMBRE</p>
+                        <h3 class="mt-3 text-lg font-bold">
+                            Feria de proyectos
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-300">
+                            Presentación de trabajos académicos.
+                        </p>
+                    </article>
+
+                </div>
+
+                <p class="mt-6 text-xs text-gray-400">
+                    Fechas ficticias utilizadas únicamente como ejemplo.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto" class="bg-gray-950 text-gray-300">
+
+        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div>
+                <h2 class="text-2xl font-extrabold text-white">UNDC</h2>
+                <p class="mt-4 text-sm leading-6">
+                    Universidad Nacional de Cañete.
+                    Educación, investigación y compromiso con la sociedad.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-white">Institución</h3>
+                <ul class="mt-4 space-y-3 text-sm">
+                    <li><a href="#universidad" class="enlace-footer">Nosotros</a></li>
+                    <li><a href="#carreras" class="enlace-footer">Carreras</a></li>
+                    <li><a href="#noticias" class="enlace-footer">Noticias</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-white">Enlaces</h3>
+                <ul class="mt-4 space-y-3 text-sm">
+                    <li><a href="#inicio" class="enlace-footer">Inicio</a></li>
+                    <li><a href="#eventos" class="enlace-footer">Eventos</a></li>
+                    <li><a href="#contacto" class="enlace-footer">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-white">Contacto</h3>
+                <p class="mt-4 text-sm leading-7">
+                    San Vicente de Cañete, Lima, Perú
+                    <br>
+                    Correo: consulta a través del portal oficial
+                </p>
+                <a href="https://web.undc.edu.pe/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="mt-3 inline-block text-sm text-yellow-300 hover:underline">
+                    Visitar portal oficial →
+                </a>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 px-5 py-5 text-center text-xs text-gray-400">
+            © 2026 · Maqueta académica no oficial de la UNDC.
+        </div>
+
+    </footer>
+
+</body>
+</html>

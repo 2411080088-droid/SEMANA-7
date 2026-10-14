@@ -1,0 +1,12 @@
+.imagenes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagenes img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}

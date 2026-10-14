@@ -1,8 +1,12 @@
 <template>
   <div class="mi-boton-container">
-    <button @click="handleClick" class="btn-estilizado">
-      ¡Haz clic aquí!
-    </button>
+    <a
+      href="/images/GatoSabado.jpeg"
+      download="GatoSabado.jpeg"
+      class="btn-estilizado"
+    >
+      Descargar imagen
+    </a>
   </div>
 </template>
 
